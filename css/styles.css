@@ -5,6 +5,7 @@
 /* ##############
    variables
    ############## */
+/* Here we declare variables in the scss files */
 /* ##############
    Initialising
    ############## */
@@ -35,6 +36,7 @@ article {
 .image + div.notice {
   position: relative;
 }
+
 .image + div.notice a {
   position: absolute;
   top: -28px;
@@ -51,12 +53,18 @@ article {
   border-bottom: solid 0.5px #d1d1d1;
 }
 
-img.little-img {
+img.little-img, .smaller-img {
   height: 95px;
   width: 95px;
   float: left;
-  margin: 0 15px 15px 0;
+  clear: left;
+  margin: 0 15px 10px 0;
   cursor: pointer;
+}
+
+.smaller-img {
+  height: 65px;
+  width: 65px;
 }
 
 /* ##############
@@ -69,20 +77,24 @@ img.little-img {
   line-height: 16px;
 }
 
-h3.article-title {
+h3.article-title, h3.sml-article-title {
   margin-top: 1rem;
   line-height: 24px;
 }
-h3.article-title a {
+
+h3.article-title a, h3.sml-article-title a {
   color: black;
   font-weight: 700;
   font-size: 22px;
   text-decoration: none;
 }
-h3.article-title a:hover {
-  text-decoration: underline #f72210;
+
+h3.article-title a:hover, h3.sml-article-title a:hover {
+  -webkit-text-decoration: underline #f72210;
+          text-decoration: underline #f72210;
 }
-h3.article-title + p {
+
+h3.article-title + p, h3.sml-article-title + p {
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -91,26 +103,92 @@ h3.article-title + p {
   margin-bottom: 0;
 }
 
-div.article-footer {
-  margin-top: 15px;
+h3.sml-article-title + p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
 }
+
+h3.sml-article-title + p a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #555555;
+}
+
+h3.sml-article-title + p a:hover {
+  -webkit-text-decoration: underline #f72210;
+          text-decoration: underline #f72210;
+  color: black;
+}
+
+div.article-footer {
+  margin: 15px 0;
+  min-height: 65px;
+}
+
 div.article-footer h3 {
   line-height: 20px;
 }
+
 div.article-footer h3 a {
   font-size: 17px;
 }
+
 div.article-footer h4 {
   line-height: 20px;
 }
+
 div.article-footer h4 a {
   color: black;
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
 }
+
 div.article-footer h4 a:hover {
   color: #f72210;
 }
 
+div.vs-div {
+  margin: auto;
+  position: relative;
+}
+
+div.vs-div span {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: table;
+  margin: auto;
+}
+
+div.vs-div span::before {
+  content: "";
+  display: block;
+  height: 0.5px;
+  position: absolute;
+  width: 100%;
+  background-color: #dbdbdb;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: calc(50% - 2px);
+}
+
+div.vs-div span::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  position: absolute;
+  width: 100%;
+  background-color: #dbdbdb;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 50%;
+}
 /*# sourceMappingURL=styles.css.map */

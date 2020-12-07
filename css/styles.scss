@@ -8,11 +8,14 @@
    variables
    ############## */
 
+/* Here we declare variables in the scss files */
+
 $red: #f72210;
 $yellow: #ffe400;
 $lightgray: #f4f5f6;
 $gray: rgba(3, 3, 3, 0.4);
 $blackish: #333333;
+$grayish: #555555;
 $black: black;
 $white: white;
 
@@ -73,8 +76,15 @@ img.little-img {
   height: 95px;
   width: 95px;
   float: left;
-  margin: 0 15px 15px 0;
+  clear: left;
+  margin: 0 15px 10px 0;
   cursor: pointer;
+}
+
+.smaller-img {
+  @extend img.little-img;
+  height: 65px;
+  width: 65px;
 }
 
 /* ##############
@@ -110,8 +120,27 @@ h3.article-title {
   }
 }
 
+h3.sml-article-title {
+  @extend h3.article-title;
+  + p {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 21px;
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: $grayish;
+    }
+    a:hover {
+      text-decoration: underline $red;
+      color: $black;
+    }
+  }
+}
+
 div.article-footer {
-  margin-top: 15px;
+  margin: 15px 0;
+  min-height: 65px;
   h3 {
     line-height: 20px;
     a {
@@ -129,5 +158,41 @@ div.article-footer {
     a:hover {
       color: $red;
     }
+  }
+}
+
+@mixin deco {
+  content: "";
+  display: block;
+  height: 0.5px;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(219, 219, 219);
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+div.vs-div {
+  margin: auto;
+  position: relative;
+  span {
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: $black;
+    border-radius: 50%;
+    display: table;
+    margin: auto;
+  }
+  span::before {
+    @include deco();
+    top: calc(50% - 2px);
+  }
+  span::after {
+    @include deco();
+    top: 50%;
   }
 }

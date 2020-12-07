@@ -53,6 +53,11 @@ article {
   border-bottom: solid 0.5px #d1d1d1;
 }
 
+.padding-and-border {
+  border-bottom: solid 1px #d1d1d1;
+  padding-bottom: 24px;
+}
+
 img.little-img, .smaller-img {
   height: 95px;
   width: 95px;
@@ -119,6 +124,11 @@ h3.sml-article-title + p a:hover {
   -webkit-text-decoration: underline #f72210;
           text-decoration: underline #f72210;
   color: black;
+}
+
+h3.sml-article-title + p span {
+  font-weight: 700;
+  color: #555555;
 }
 
 div.article-footer {
@@ -190,5 +200,21 @@ div.vs-div span::after {
   right: 0;
   z-index: -1;
   top: 50%;
+}
+
+section#debate-section > div:first-of-type {
+  margin: 15px 0 10px 0;
+  border-top: solid 4px #d1d1d1;
+  padding-top: 10px;
+}
+
+section#debate-section > div:last-of-type {
+  margin: 10px 0 15px 0;
+  border-bottom: solid 4px #d1d1d1;
+  padding-bottom: 28px;
+}
+
+section#debate-section > div:last-of-type .smaller-img {
+  float: right;
 }
 /*# sourceMappingURL=styles.css.map */

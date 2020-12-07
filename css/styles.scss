@@ -72,6 +72,11 @@ article {
   border-bottom: $border-gray;
 }
 
+.padding-and-border {
+  border-bottom: solid 1px rgb(209, 209, 209);
+  padding-bottom: 24px;
+}
+
 img.little-img {
   height: 95px;
   width: 95px;
@@ -135,6 +140,10 @@ h3.sml-article-title {
       text-decoration: underline $red;
       color: $black;
     }
+    span {
+      font-weight: 700;
+      color: $grayish;
+    }
   }
 }
 
@@ -194,5 +203,21 @@ div.vs-div {
   span::after {
     @include deco();
     top: 50%;
+  }
+}
+
+section#debate-section {
+  > div:first-of-type {
+    margin: 15px 0 10px 0;
+    border-top: solid 4px rgb(209, 209, 209);
+    padding-top: 10px;
+  }
+  > div:last-of-type {
+    margin: 10px 0 15px 0;
+    border-bottom: solid 4px rgb(209, 209, 209);
+    padding-bottom: 28px;
+    .smaller-img {
+      float: right;
+    }
   }
 }

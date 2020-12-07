@@ -1,0 +1,133 @@
+/* ##############
+   imports
+   ############## */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* ##############
+   variables
+   ############## */
+
+$red: #f72210;
+$yellow: #ffe400;
+$lightgray: #f4f5f6;
+$gray: rgba(3, 3, 3, 0.4);
+$blackish: #333333;
+$black: black;
+$white: white;
+
+$roboto: "Roboto Condensed", sans-serif;
+$arial: Arial, Helvetica, sans-serif;
+
+$border-gray: solid 0.5px rgb(209, 209, 209);
+
+/* ##############
+   Initialising
+   ############## */
+
+body {
+  font-family: $roboto;
+}
+
+section {
+  padding: 30px 0;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+/* ##############
+   Positioning
+   ############## */
+
+.container-xl {
+  max-width: 1310px;
+}
+
+.image {
+  width: 100%;
+  cursor: pointer;
+}
+
+.image + div.notice {
+  position: relative;
+  a {
+    position: absolute;
+    top: -28px;
+    padding: 6px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $red;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.border-bottom {
+  border-bottom: $border-gray;
+}
+
+img.little-img {
+  height: 95px;
+  width: 95px;
+  float: left;
+  margin: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+/* ##############
+   Styling text
+   ############## */
+
+.section-title {
+  color: $gray;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+h3.article-title {
+  margin-top: 1rem;
+  line-height: 24px;
+  a {
+    color: $black;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline $red;
+  }
+  + p {
+    color: $blackish;
+    font-family: $arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+
+div.article-footer {
+  margin-top: 15px;
+  h3 {
+    line-height: 20px;
+    a {
+      font-size: 17px;
+    }
+  }
+  h4 {
+    line-height: 20px;
+    a {
+      color: $black;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $red;
+    }
+  }
+}

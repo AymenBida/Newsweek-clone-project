@@ -50,6 +50,15 @@ article {
   text-decoration: none;
 }
 
+.image + div.notice.sml-notice span {
+  background-color: #C2D4D7;
+  color: black;
+  top: -19px;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .border-bottom {
   border-bottom: solid 0.5px #d1d1d1;
 }

@@ -71,7 +71,11 @@ article {
 .image + div.notice.sml-notice{
 span {
   background-color: #C2D4D7;
-color: $black;
+  color: $black;
+  top: -19px;
+  padding: 4px 8px;
+  font-size: 14px;   
+  line-height: 16px;
 }
 
 }

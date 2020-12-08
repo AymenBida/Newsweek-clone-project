@@ -292,4 +292,8 @@ section#features span.text-black {
   color: #f72210;
   cursor: pointer;
 }
+
+section#editors-pick h2 {
+  font-size: 19px;
+}
 /*# sourceMappingURL=styles.css.map */

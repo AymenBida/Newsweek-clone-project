@@ -148,6 +148,21 @@ h3.sml-article-title {
   }
 }
 
+h3.sml-article-title.f-size-17-20 {
+  line-height: 20px;
+  a {
+    font-size: 17px;
+  }
+  + p {
+    color: $blackish;
+    font-family: $arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+
 div.article-footer {
   margin: 15px 0;
   min-height: 65px;
@@ -222,3 +237,4 @@ section#debate-section {
     }
   }
 }
+

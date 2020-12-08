@@ -55,7 +55,8 @@ article {
 
 .image + div.notice {
   position: relative;
-  a {
+  a,
+  span {
     position: absolute;
     top: -28px;
     padding: 6px 16px;

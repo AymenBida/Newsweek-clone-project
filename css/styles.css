@@ -37,7 +37,8 @@ article {
   position: relative;
 }
 
-.image + div.notice a {
+.image + div.notice a,
+.image + div.notice span {
   position: absolute;
   top: -28px;
   padding: 6px 16px;

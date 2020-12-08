@@ -68,6 +68,13 @@ article {
     text-decoration: none;
   }
 }
+.image + div.notice.sml-notice{
+span {
+  background-color: #C2D4D7;
+color: $black;
+}
+
+}
 
 .border-bottom {
   border-bottom: $border-gray;

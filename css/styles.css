@@ -33,6 +33,10 @@ article {
   cursor: pointer;
 }
 
+.sub-image {
+  width: 258px;
+}
+
 .image + div.notice {
   position: relative;
 }
@@ -274,6 +278,16 @@ section#in-the-magazine a {
 
 section#in-the-magazine a:hover {
   background-color: #dfdfdf;
+}
+
+section#big-section h2 {
+  line-height: 22px;
+}
+
+section#big-section h2 > a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #f72210;
 }
 
 section#features h3.sml-article-title {

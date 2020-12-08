@@ -52,6 +52,9 @@ article {
   width: 100%;
   cursor: pointer;
 }
+.sub-image{
+  width: 258px;
+}
 
 .image + div.notice {
   position: relative;
@@ -275,6 +278,17 @@ section#in-the-magazine {
   a:hover {
     background-color: rgb(223, 223, 223);
   }
+}
+section#big-section {
+  h2 {
+   line-height: 22px;
+   > a {
+    font-size: 22px;
+    text-decoration: none;
+    color: $red;
+  }
+  }
+  
 }
 
 section#features {

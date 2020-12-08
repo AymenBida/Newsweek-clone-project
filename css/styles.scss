@@ -261,3 +261,34 @@ div#subscribe {
     background-color: $red;
   }
 }
+
+section#in-the-magazine {
+  h2 {
+    font-size: 19px;
+  }
+  a {
+    font-size: 19px;
+    background-color: $lightgray;
+    text-decoration: none;
+    color: $black;
+  }
+  a:hover {
+    background-color: rgb(223, 223, 223);
+  }
+}
+
+section#features {
+  h3.sml-article-title {
+    line-height: 16px;
+    a {
+      font-size: 16px;
+    }
+  }
+  span.text-white {
+    background-color: $red;
+  }
+  span.text-black {
+    color: $red;
+    cursor: pointer;
+  }
+}

@@ -260,4 +260,36 @@ div#subscribe a {
   font-size: 19px;
   background-color: #f72210;
 }
+
+section#in-the-magazine h2 {
+  font-size: 19px;
+}
+
+section#in-the-magazine a {
+  font-size: 19px;
+  background-color: #f4f5f6;
+  text-decoration: none;
+  color: black;
+}
+
+section#in-the-magazine a:hover {
+  background-color: #dfdfdf;
+}
+
+section#features h3.sml-article-title {
+  line-height: 16px;
+}
+
+section#features h3.sml-article-title a {
+  font-size: 16px;
+}
+
+section#features span.text-white {
+  background-color: #f72210;
+}
+
+section#features span.text-black {
+  color: #f72210;
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */

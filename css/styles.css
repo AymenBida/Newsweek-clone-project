@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 article {
@@ -265,18 +265,35 @@ div#subscribe a {
   background-color: #f72210;
 }
 
+section#in-the-magazine div.features h3.sml-article-title {
+  line-height: 16px;
+}
+
+section#in-the-magazine div.features h3.sml-article-title a {
+  font-size: 16px;
+}
+
+section#in-the-magazine div.features span.text-white {
+  background-color: #f72210;
+}
+
+section#in-the-magazine div.features span.text-black {
+  color: #f72210;
+  cursor: pointer;
+}
+
 section#in-the-magazine h2 {
   font-size: 19px;
 }
 
-section#in-the-magazine a {
+section#in-the-magazine a#see-all-features {
   font-size: 19px;
   background-color: #f4f5f6;
   text-decoration: none;
   color: black;
 }
 
-section#in-the-magazine a:hover {
+section#in-the-magazine a#see-all-features:hover {
   background-color: #dfdfdf;
 }
 
@@ -288,23 +305,6 @@ section#big-section h2 > a {
   font-size: 22px;
   text-decoration: none;
   color: #f72210;
-}
-
-section#features h3.sml-article-title {
-  line-height: 16px;
-}
-
-section#features h3.sml-article-title a {
-  font-size: 16px;
-}
-
-section#features span.text-white {
-  background-color: #f72210;
-}
-
-section#features span.text-black {
-  color: #f72210;
-  cursor: pointer;
 }
 
 section#editors-pick h2 {
@@ -362,18 +362,18 @@ section#news-letter p {
   color: #333333;
 }
 
-section#subscription div.btn-group,
-section#news-letter div.btn-group {
+section#subscription div#btn-group,
+section#news-letter div#btn-group {
   width: 100%;
 }
 
-section#subscription div.btn-group *,
-section#news-letter div.btn-group * {
+section#subscription div#btn-group *,
+section#news-letter div#btn-group * {
   width: 50%;
 }
 
-section#subscription div.btn-group button.btn,
-section#news-letter div.btn-group button.btn {
+section#subscription div#btn-group button.btn,
+section#news-letter div#btn-group button.btn {
   background-color: #f72210;
 }
 
@@ -411,10 +411,6 @@ footer ul li a:hover {
   color: black;
 }
 
-#social {
-  border-bottom: solid 0.5px #d1d1d1;
-}
-
 #social li {
   font-size: 24px;
   color: #555555;
@@ -422,5 +418,25 @@ footer ul li a:hover {
 
 #social li:hover {
   color: blue;
+}
+
+@media (min-width: 768px) {
+  div.card {
+    max-width: 330px;
+    margin: auto;
+  }
+  img.sub-image {
+    width: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #starting5 {
+    height: auto;
+  }
+  section#subscription div#btn-group *,
+  section#news-letter div#btn-group * {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

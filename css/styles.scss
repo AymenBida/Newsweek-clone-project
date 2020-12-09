@@ -33,7 +33,7 @@ body {
 }
 
 section {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 article {
@@ -266,19 +266,35 @@ div#subscribe {
 }
 
 section#in-the-magazine {
+  div.features {
+    h3.sml-article-title {
+      line-height: 16px;
+      a {
+        font-size: 16px;
+      }
+    }
+    span.text-white {
+      background-color: $red;
+    }
+    span.text-black {
+      color: $red;
+      cursor: pointer;
+    }
+  }
   h2 {
     font-size: 19px;
   }
-  a {
+  a#see-all-features {
     font-size: 19px;
     background-color: $lightgray;
     text-decoration: none;
     color: $black;
   }
-  a:hover {
+  a#see-all-features:hover {
     background-color: rgb(223, 223, 223);
   }
 }
+
 section#big-section {
   h2 {
     line-height: 22px;
@@ -287,22 +303,6 @@ section#big-section {
       text-decoration: none;
       color: $red;
     }
-  }
-}
-
-section#features {
-  h3.sml-article-title {
-    line-height: 16px;
-    a {
-      font-size: 16px;
-    }
-  }
-  span.text-white {
-    background-color: $red;
-  }
-  span.text-black {
-    color: $red;
-    cursor: pointer;
   }
 }
 
@@ -349,7 +349,7 @@ section#news-letter {
     line-height: 21px;
     color: $blackish;
   }
-  div.btn-group {
+  div#btn-group {
     width: 100%;
     * {
       width: 50%;
@@ -395,12 +395,36 @@ footer {
   }
 }
 #social {
-  border-bottom: $border-gray;
   li {
     font-size: 24px;
     color: $grayish;
   }
   li:hover {
     color: blue;
+  }
+}
+
+@media (min-width: 768px) {
+  div.card {
+    max-width: 330px;
+    margin: auto;
+  }
+
+  img.sub-image {
+    width: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #starting5 {
+    height: auto;
+  }
+  section#subscription,
+  section#news-letter {
+    div#btn-group {
+      * {
+        width: 100%;
+      }
+    }
   }
 }

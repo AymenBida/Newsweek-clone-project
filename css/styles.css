@@ -385,4 +385,8 @@ section#news-letter div.btn-group button.btn {
   background-size: cover;
   background-position-y: 50%;
 }
+
+footer ul li {
+  font-size: 16px;
+}
 /*# sourceMappingURL=styles.css.map */

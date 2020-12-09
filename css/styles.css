@@ -89,6 +89,70 @@ img.little-img, .smaller-img {
 /* ##############
    Styling text
    ############## */
+div.header-1 {
+  background-color: #f72210;
+}
+
+div.header-1 div.size-210 {
+  width: 210px;
+}
+
+div.header-2 ul li {
+  list-style-type: none;
+}
+
+div.header-2 ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  border-left: solid 0.5px #d1d1d1;
+}
+
+div.header-2 ul li a:hover {
+  color: #f72210;
+}
+
+div.header-2 ul li input {
+  border: 0;
+  width: 80px;
+}
+
+div.header-3 ul li {
+  list-style-type: none;
+}
+
+div.header-3 ul li a {
+  text-decoration: none;
+  color: rgba(3, 3, 3, 0.4);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+div.header-3 ul li a:hover {
+  color: #f72210;
+}
+
+div.header-3 ul li input {
+  border: 0;
+  width: 80px;
+}
+
+div.login-and-sub a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+div.login-and-sub a:hover {
+  text-decoration: none;
+}
+
+div.login-and-sub > a:last-of-type {
+  color: black;
+  background-color: #ffe400;
+  border-radius: 20px;
+}
+
 .section-title {
   color: rgba(3, 3, 3, 0.4);
   font-weight: 700;

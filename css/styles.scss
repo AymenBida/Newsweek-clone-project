@@ -110,6 +110,71 @@ img.little-img {
    Styling text
    ############## */
 
+div.header-1 {
+  background-color: $red;
+  div.size-210 {
+    width: 210px;
+  }
+}
+
+div.header-2 {
+  ul {
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 19px;
+        border-left: $border-gray;
+      }
+      a:hover {
+        color: $red;
+      }
+      input {
+        border: 0;
+        width: 80px;
+      }
+    }
+  }
+}
+
+div.header-3 {
+  ul {
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: $gray;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      a:hover {
+        color: $red;
+      }
+      input {
+        border: 0;
+        width: 80px;
+      }
+    }
+  }
+}
+
+div.login-and-sub {
+  a {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  > a:last-of-type {
+    color: $black;
+    background-color: $yellow;
+    border-radius: 20px;
+  }
+}
+
 .section-title {
   color: $gray;
   font-weight: 700;

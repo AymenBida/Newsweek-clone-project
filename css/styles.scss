@@ -19,8 +19,11 @@ $grayish: #555555;
 $black: black;
 $white: white;
 
-$roboto: "Roboto Condensed", sans-serif;
-$arial: Arial, Helvetica, sans-serif;
+$roboto: "Roboto Condensed",
+sans-serif;
+$arial: Arial,
+Helvetica,
+sans-serif;
 
 $border-gray: solid 0.5px rgb(209, 209, 209);
 
@@ -52,12 +55,14 @@ article {
   width: 100%;
   cursor: pointer;
 }
+
 .sub-image {
   width: 258px;
 }
 
-.image + div.notice {
+.image+div.notice {
   position: relative;
+
   a,
   span {
     position: absolute;
@@ -71,7 +76,8 @@ article {
     text-decoration: none;
   }
 }
-.image + div.notice.sml-notice {
+
+.image+div.notice.sml-notice {
   span {
     background-color: #c2d4d7;
     color: $black;
@@ -112,6 +118,7 @@ img.little-img {
 
 div.header-1 {
   background-color: $red;
+
   div.size-210 {
     width: 210px;
   }
@@ -121,6 +128,7 @@ div.header-2 {
   ul {
     li {
       list-style-type: none;
+
       a {
         text-decoration: none;
         color: black;
@@ -128,9 +136,11 @@ div.header-2 {
         font-size: 19px;
         border-left: $border-gray;
       }
+
       a:hover {
         color: $red;
       }
+
       input {
         border: 0;
         width: 80px;
@@ -143,15 +153,18 @@ div.header-3 {
   ul {
     li {
       list-style-type: none;
+
       a {
         text-decoration: none;
         color: $gray;
         font-weight: bold;
         font-size: 16px;
       }
+
       a:hover {
         color: $red;
       }
+
       input {
         border: 0;
         width: 80px;
@@ -165,10 +178,12 @@ div.login-and-sub {
     font-size: 18px;
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: none;
   }
-  > a:last-of-type {
+
+  >a:last-of-type {
     color: $black;
     background-color: $yellow;
     border-radius: 20px;
@@ -185,16 +200,19 @@ div.login-and-sub {
 h3.article-title {
   margin-top: 1rem;
   line-height: 24px;
+
   a {
     color: $black;
     font-weight: 700;
     font-size: 22px;
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: underline $red;
   }
-  + p {
+
+  +p {
     color: $blackish;
     font-family: $arial;
     font-size: 13px;
@@ -206,19 +224,23 @@ h3.article-title {
 
 h3.sml-article-title {
   @extend h3.article-title;
-  + p {
+
+  +p {
     font-family: $roboto;
     font-size: 14px;
     line-height: 21px;
+
     a {
       font-weight: 700;
       text-decoration: none;
       color: $grayish;
     }
+
     a:hover {
       text-decoration: underline $red;
       color: $black;
     }
+
     span {
       font-weight: 700;
       color: $grayish;
@@ -226,12 +248,18 @@ h3.sml-article-title {
   }
 }
 
+#newsweek-logo {
+  height: 20px;
+}
+
 h3.sml-article-title.f-size-17-20 {
   line-height: 20px;
+
   a {
     font-size: 17px;
   }
-  + p {
+
+  +p {
     color: $blackish;
     font-family: $arial;
     font-size: 13px;
@@ -244,20 +272,25 @@ h3.sml-article-title.f-size-17-20 {
 div.article-footer {
   margin: 15px 0;
   min-height: 65px;
+
   h3 {
     line-height: 20px;
+
     a {
       font-size: 17px;
     }
   }
+
   h4 {
     line-height: 20px;
+
     a {
       color: $black;
       font-size: 17px;
       font-weight: 700;
       text-decoration: none;
     }
+
     a:hover {
       color: $red;
     }
@@ -279,6 +312,7 @@ div.article-footer {
 div.vs-div {
   margin: auto;
   position: relative;
+
   span {
     color: rgb(189, 189, 189);
     font-size: 14px;
@@ -290,10 +324,12 @@ div.vs-div {
     display: table;
     margin: auto;
   }
+
   span::before {
     @include deco();
     top: calc(50% - 2px);
   }
+
   span::after {
     @include deco();
     top: 50%;
@@ -301,15 +337,17 @@ div.vs-div {
 }
 
 section#debate-section {
-  > div:first-of-type {
+  >div:first-of-type {
     margin: 15px 0 10px 0;
     border-top: solid 4px rgb(209, 209, 209);
     padding-top: 10px;
   }
-  > div:last-of-type {
+
+  >div:last-of-type {
     margin: 10px 0 15px 0;
     border-bottom: solid 4px rgb(209, 209, 209);
     padding-bottom: 28px;
+
     .smaller-img {
       float: right;
     }
@@ -319,11 +357,13 @@ section#debate-section {
 div#subscribe {
   max-width: 300px;
   background-color: $lightgray;
+
   p {
     font-size: 19px;
     line-height: 19px;
     color: $blackish;
   }
+
   a {
     font-size: 19px;
     background-color: $red;
@@ -334,27 +374,33 @@ section#in-the-magazine {
   div.features {
     h3.sml-article-title {
       line-height: 16px;
+
       a {
         font-size: 16px;
       }
     }
+
     span.text-white {
       background-color: $red;
     }
+
     span.text-black {
       color: $red;
       cursor: pointer;
     }
   }
+
   h2 {
     font-size: 19px;
   }
+
   a#see-all-features {
     font-size: 19px;
     background-color: $lightgray;
     text-decoration: none;
     color: $black;
   }
+
   a#see-all-features:hover {
     background-color: rgb(223, 223, 223);
   }
@@ -363,7 +409,8 @@ section#in-the-magazine {
 section#big-section {
   h2 {
     line-height: 22px;
-    > a {
+
+    >a {
       font-size: 22px;
       text-decoration: none;
       color: $red;
@@ -384,29 +431,36 @@ section#news-letter {
     font-size: 16px;
     line-height: 16px;
   }
+
   div#in-depth {
     background-color: rgb(243, 243, 243);
+
     div#image-contain {
       width: 237px;
       height: 240px;
       position: relative;
-      > img {
+
+      >img {
         position: absolute;
       }
-      > img:first-of-type {
+
+      >img:first-of-type {
         top: 0;
         left: 0;
       }
-      > img:last-of-type {
+
+      >img:last-of-type {
         bottom: 0;
         right: 0;
       }
     }
   }
+
   h3 {
     font-size: 20px;
     line-height: 28px;
   }
+
   p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
@@ -414,11 +468,14 @@ section#news-letter {
     line-height: 21px;
     color: $blackish;
   }
+
   div#btn-group {
     width: 100%;
+
     * {
       width: 50%;
     }
+
     button.btn {
       background-color: $red;
     }
@@ -441,17 +498,20 @@ footer {
     line-height: 12px;
     color: #666666;
   }
+
   ul {
     li {
       padding: 0 15px 0 0;
       list-style-type: none;
       font-family: Arial, Helvetica, sans-serif;
       color: grey;
+
       a {
         font-size: 14px;
         text-decoration: none;
         color: grey;
       }
+
       a:hover {
         text-decoration: none;
         color: $black;
@@ -459,11 +519,13 @@ footer {
     }
   }
 }
+
 #social {
   li {
     font-size: 24px;
     color: $grayish;
   }
+
   li:hover {
     color: blue;
   }
@@ -480,10 +542,11 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   #starting5 {
     height: auto;
   }
+
   section#subscription,
   section#news-letter {
     div#btn-group {
@@ -491,5 +554,9 @@ footer {
         width: 100%;
       }
     }
+  }
+
+  #newsweek-logo {
+    height: 60px;
   }
 }

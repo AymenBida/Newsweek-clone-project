@@ -386,13 +386,22 @@ section#news-letter div.btn-group button.btn {
   background-position-y: 50%;
 }
 
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666666;
+}
+
 footer ul li {
-  padding: 0 10px;
-  font-size: 16px;
+  padding: 0 15px 0 0;
   list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
 }
 
 footer ul li a {
+  font-size: 14px;
   text-decoration: none;
   color: grey;
 }
@@ -402,8 +411,13 @@ footer ul li a:hover {
   color: black;
 }
 
+#social {
+  border-bottom: solid 0.5px #d1d1d1;
+}
+
 #social li {
-  font-size: 18px;
+  font-size: 24px;
+  color: #555555;
 }
 
 #social li:hover {

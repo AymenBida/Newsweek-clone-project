@@ -2,11 +2,14 @@
    imports
    ############## */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 /* ##############
    variables
    ############## */
-/* Here we declare variables in the scss files */
-/* ##############
+
+   /* Here we declare variables in the scss files */
+
+   /* ##############
    Initialising
    ############## */
 body {
@@ -42,6 +45,12 @@ h3.article-title {
   line-height: 24px;
 }
 
+footer ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: grey;
+}
+
 h3.article-title a {
   color: black;
   font-weight: 700;
@@ -49,9 +58,49 @@ h3.article-title a {
   text-decoration: none;
 }
 
+div.article-footer h3 {
+  line-height: 20px;
+}
+
+div.article-footer h4 {
+  line-height: 20px;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+div.login-and-sub a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+div.header-2 ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  border-left: solid 0.5px #d1d1d1;
+}
+
+div.header-3 ul li a {
+  text-decoration: none;
+  color: rgba(3, 3, 3, 0.4);
+  font-weight: bold;
+  font-size: 16px;
+}
+
 h3.article-title a:hover {
   -webkit-text-decoration: underline #f72210;
-          text-decoration: underline #f72210;
+  text-decoration: underline #f72210;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
 }
 
 h3.article-title + p {
@@ -68,16 +117,8 @@ div.article-footer {
   min-height: 65px;
 }
 
-div.article-footer h3 {
-  line-height: 20px;
-}
-
 div.article-footer h3 a {
   font-size: 17px;
-}
-
-div.article-footer h4 {
-  line-height: 20px;
 }
 
 div.article-footer h4 a {
@@ -87,15 +128,35 @@ div.article-footer h4 a {
   text-decoration: none;
 }
 
-div.article-footer h4 a:hover {
-  color: #f72210;
+div.login-and-sub a:hover {
+  text-decoration: none;
 }
 
-footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: #666;
+div.login-and-sub > a:last-of-type {
+  color: black;
+  background-color: #ffe400;
+  border-radius: 20px;
+}
+
+.image + div.notice a,
+.image + div.notice span {
+  position: absolute;
+  top: -28px;
+  padding: 6px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #f72210;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h3.sml-article-title.f-size-17-20 a {
+  font-size: 17px;
+}
+
+div.article-footer h4 a:hover {
+  color: #f72210;
 }
 
 footer ul li {
@@ -103,17 +164,6 @@ footer ul li {
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
   color: grey;
-}
-
-footer ul li a {
-  font-size: 14px;
-  text-decoration: none;
-  color: grey;
-}
-
-footer ul li a:hover {
-  text-decoration: none;
-  color: black;
 }
 
 div.vs-div {
@@ -159,31 +209,8 @@ div.vs-div span::after {
   top: 50%;
 }
 
-div.login-and-sub a {
-  font-size: 18px;
-  text-decoration: none;
-}
-
-div.login-and-sub a:hover {
-  text-decoration: none;
-}
-
-div.login-and-sub > a:last-of-type {
-  color: black;
-  background-color: #ffe400;
-  border-radius: 20px;
-}
-
 div.header-2 ul li {
   list-style-type: none;
-}
-
-div.header-2 ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 19px;
-  border-left: solid 0.5px #d1d1d1;
 }
 
 div.header-2 ul li a:hover {
@@ -199,13 +226,6 @@ div.header-3 ul li {
   list-style-type: none;
 }
 
-div.header-3 ul li a {
-  text-decoration: none;
-  color: rgba(3, 3, 3, 0.4);
-  font-weight: bold;
-  font-size: 16px;
-}
-
 div.header-3 ul li a:hover {
   color: #f72210;
 }
@@ -217,19 +237,6 @@ div.header-3 ul li input {
 
 .image + div.notice {
   position: relative;
-}
-
-.image + div.notice a,
-.image + div.notice span {
-  position: absolute;
-  top: -28px;
-  padding: 6px 16px;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #f72210;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .image + div.notice.sml-notice span {
@@ -294,10 +301,6 @@ div.header-1 div.size-210 {
 
 h3.sml-article-title.f-size-17-20 {
   line-height: 20px;
-}
-
-h3.sml-article-title.f-size-17-20 a {
-  font-size: 17px;
 }
 
 h3.sml-article-title.f-size-17-20 + p {
@@ -476,6 +479,7 @@ section#news-letter div#btn-group button.btn {
     max-width: 330px;
     margin: auto;
   }
+
   img.sub-image {
     width: 110px;
   }
@@ -485,12 +489,15 @@ section#news-letter div#btn-group button.btn {
   #starting5 {
     height: auto;
   }
+
   section#subscription div#btn-group *,
   section#news-letter div#btn-group * {
     width: 100%;
   }
+
   #newsweek-logo {
     height: 60px;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */

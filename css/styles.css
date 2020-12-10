@@ -275,6 +275,38 @@ img.little-img,
 /* ##############
    Styling text
    ############## */
+
+.show-up {
+  transition: all 750ms;
+}
+
+.show-up:hover {
+  transform: translate(-5px, 0px) ;
+  box-shadow: 10px 5px 10px rgb(196, 196, 196), -10px 5px 10px rgb(196, 196, 196);
+  width: calc(100% + 10px);
+}
+
+.glow {
+  transition: all 500ms;
+}
+
+.glow:hover {
+  background-color: #ffe6003b;
+  border-radius: 25%;
+}
+
+.border-glow {
+  transition: all 500ms;
+}
+
+.border-glow:hover {
+  transform: translate(0px, -5px);
+  box-shadow: 5px 5px 10px #ffe6003b,
+    -5px -5px 10px #ffe6003b,
+    5px -5px 10px #ffe6003b,
+    -5px 5px 10px #ffe6003b;
+}
+
 .black-link-red {
   text-decoration: none;
   color: black;

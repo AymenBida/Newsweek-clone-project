@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-#  We have created the clone of the Newsweek-clone-project magazine.
-#  This project has been created as a part of Microverse Collaborative Project.
+##  We have created the clone of the Newsweek-clone-project magazine.
+This project has been created as a part of Microverse Collaborative Project.
 
+## Screenshot
 ![screenshot](./images/screenshot.jpg)
 
 ## Built With
@@ -32,11 +33,11 @@ A machine with a working and up to date web browser.
 
 * Clone the repository to your folder of choice using Git :
 
-* git clone git@github.com:AymenBida/Newsweek-clone-project.git
+* <code>git clone git@github.com:AymenBida/Newsweek-clone-project.git</code>
 
 * then go to that folder :
 
-* cd "your-folder-path"
+* <code>cd "your-folder-path"</code>
 
 * Open the index.html file (in the folder) and the website should show up.
 

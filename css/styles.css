@@ -1,0 +1,508 @@
+/* ##############
+   imports
+   ############## */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* ##############
+   variables
+   ############## */
+
+/* Here we declare variables in the scss files */
+
+/* ##############
+   Initialising
+   ############## */
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+section {
+  padding: 10px 0;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+/* ##############
+   Positioning
+   ############## */
+.container-xl {
+  max-width: 1310px;
+}
+
+.image {
+  width: 100%;
+  cursor: pointer;
+}
+
+.sub-image {
+  width: 258px;
+}
+
+h3.article-title {
+  margin-top: 1rem;
+  line-height: 24px;
+}
+
+footer ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: grey;
+}
+
+h3.article-title a {
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+div.article-footer h3 {
+  line-height: 20px;
+}
+
+div.article-footer h4 {
+  line-height: 20px;
+}
+
+div.login-and-sub a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+div.article-footer h3 a {
+  font-size: 17px;
+}
+
+div.article-footer h4 a {
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+div.header-2 ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  border-left: solid 0.5px #d1d1d1;
+}
+
+div.header-3 ul li a {
+  text-decoration: none;
+  color: rgba(3, 3, 3, 0.4);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h3.article-title a:hover {
+  -webkit-text-decoration: underline #f72210;
+  text-decoration: underline #f72210;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
+}
+
+h3.article-title + p {
+  color: #333;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+div.article-footer {
+  margin: 15px 0;
+  min-height: 65px;
+}
+
+div.login-and-sub a:hover {
+  text-decoration: none;
+}
+
+div.login-and-sub > a:last-of-type {
+  color: black;
+  background-color: #ffe400;
+  border-radius: 20px;
+}
+
+div.vs-div span {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: table;
+  margin: auto;
+}
+
+.image + div.notice a,
+.image + div.notice span {
+  position: absolute;
+  top: -28px;
+  padding: 6px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #f72210;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h3.sml-article-title.f-size-17-20 a {
+  font-size: 17px;
+}
+
+div.article-footer h4 a:hover {
+  color: #f72210;
+}
+
+footer ul li {
+  padding: 0 15px 0 0;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+div.vs-div {
+  margin: auto;
+  position: relative;
+}
+
+div.vs-div span::before {
+  content: "";
+  display: block;
+  height: 0.5px;
+  position: absolute;
+  width: 100%;
+  background-color: #dbdbdb;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: calc(50% - 2px);
+}
+
+div.vs-div span::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  position: absolute;
+  width: 100%;
+  background-color: #dbdbdb;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 50%;
+}
+
+div.header-2 ul li {
+  list-style-type: none;
+}
+
+div.header-2 ul li a:hover {
+  color: #f72210;
+}
+
+div.header-2 ul li input {
+  border: 0;
+  width: 80px;
+}
+
+div.header-3 ul li {
+  list-style-type: none;
+}
+
+div.header-3 ul li a:hover {
+  color: #f72210;
+}
+
+div.header-3 ul li input {
+  border: 0;
+  width: 80px;
+}
+
+.image + div.notice {
+  position: relative;
+}
+
+.image + div.notice.sml-notice span {
+  background-color: #c2d4d7;
+  color: black;
+  top: -19px;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.border-bottom {
+  border-bottom: solid 0.5px #d1d1d1;
+}
+
+.padding-and-border {
+  border-bottom: solid 1px #d1d1d1;
+  padding-bottom: 24px;
+}
+
+img.little-img,
+.smaller-img {
+  height: 95px;
+  width: 95px;
+  float: left;
+  clear: left;
+  margin: 0 15px 10px 0;
+  cursor: pointer;
+}
+
+.smaller-img {
+  height: 65px;
+  width: 65px;
+}
+
+/* ##############
+   Styling text
+   ############## */
+.black-link-red {
+  text-decoration: none;
+  color: black;
+}
+
+.black-link-red:hover {
+  color: black;
+  text-decoration: underline #f72210;
+}
+
+div.header-1 {
+  background-color: #f72210;
+}
+
+div.header-1 div.size-210 {
+  width: 210px;
+}
+
+.section-title {
+  color: rgba(3, 3, 3, 0.4);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#newsweek-logo {
+  height: 20px;
+}
+
+h3.sml-article-title.f-size-17-20 {
+  line-height: 20px;
+}
+
+h3.sml-article-title.f-size-17-20 + p {
+  color: #333;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+section#debate-section > div:first-of-type {
+  margin: 15px 0 10px 0;
+  border-top: solid 4px #d1d1d1;
+  padding-top: 10px;
+}
+
+section#debate-section > div:last-of-type {
+  margin: 10px 0 15px 0;
+  border-bottom: solid 4px #d1d1d1;
+  padding-bottom: 28px;
+}
+
+section#debate-section > div:last-of-type .smaller-img {
+  float: right;
+}
+
+div#subscribe {
+  max-width: 300px;
+  background-color: #f4f5f6;
+}
+
+div#subscribe p {
+  font-size: 19px;
+  line-height: 19px;
+  color: #333;
+}
+
+div#subscribe a {
+  font-size: 19px;
+  background-color: #f72210;
+}
+
+section#big-section h2 {
+  line-height: 22px;
+}
+
+section#big-section h2 > a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #f72210;
+}
+
+section#in-the-magazine div.features h3.sml-article-title {
+  line-height: 16px;
+}
+
+section#in-the-magazine div.features h3.sml-article-title a {
+  font-size: 16px;
+}
+
+section#in-the-magazine div.features span.text-white {
+  background-color: #f72210;
+}
+
+section#in-the-magazine div.features span.text-black {
+  color: #f72210;
+  cursor: pointer;
+}
+
+section#in-the-magazine h2 {
+  font-size: 19px;
+}
+
+section#in-the-magazine a#see-all-features {
+  font-size: 19px;
+  background-color: #f4f5f6;
+  text-decoration: none;
+  color: black;
+}
+
+section#in-the-magazine a#see-all-features:hover {
+  background-color: #dfdfdf;
+}
+
+section#editors-pick h2 {
+  font-size: 19px;
+}
+
+section#subscription h2,
+section#news-letter h2 {
+  color: #f72210;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+section#subscription div#in-depth,
+section#news-letter div#in-depth {
+  background-color: #f3f3f3;
+}
+
+section#subscription div#in-depth div#image-contain,
+section#news-letter div#in-depth div#image-contain {
+  width: 237px;
+  height: 240px;
+  position: relative;
+}
+
+section#subscription div#in-depth div#image-contain > img,
+section#news-letter div#in-depth div#image-contain > img {
+  position: absolute;
+}
+
+section#subscription div#in-depth div#image-contain > img:first-of-type,
+section#news-letter div#in-depth div#image-contain > img:first-of-type {
+  top: 0;
+  left: 0;
+}
+
+section#subscription div#in-depth div#image-contain > img:last-of-type,
+section#news-letter div#in-depth div#image-contain > img:last-of-type {
+  bottom: 0;
+  right: 0;
+}
+
+section#subscription h3,
+section#news-letter h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+section#subscription p,
+section#news-letter p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  color: #333;
+}
+
+section#subscription div#btn-group,
+section#news-letter div#btn-group {
+  width: 100%;
+}
+
+section#subscription div#btn-group *,
+section#news-letter div#btn-group * {
+  width: 50%;
+}
+
+section#subscription div#btn-group button.btn,
+section#news-letter div#btn-group button.btn {
+  background-color: #f72210;
+}
+
+#starting5 {
+  height: 200px;
+  background-image: url("../images/starting5-homepage.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+#social li {
+  font-size: 24px;
+  color: #555;
+}
+
+#social li:hover {
+  color: blue;
+}
+
+@media (min-width: 768px) {
+  div.card {
+    max-width: 330px;
+    margin: auto;
+  }
+
+  img.sub-image {
+    width: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  #starting5 {
+    height: auto;
+  }
+
+  section#subscription div#btn-group *,
+  section#news-letter div#btn-group * {
+    width: 100%;
+  }
+
+  #newsweek-logo {
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

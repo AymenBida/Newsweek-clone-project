@@ -275,10 +275,14 @@ img.little-img,
 /* ##############
    Styling text
    ############## */
-.test {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.black-link-red {
+  text-decoration: none;
+  color: black;
+}
+
+.black-link-red:hover {
+  color: black;
+  text-decoration: underline #f72210;
 }
 
 div.header-1 {

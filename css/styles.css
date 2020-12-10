@@ -281,7 +281,7 @@ img.little-img,
 }
 
 .show-up:hover {
-  transform: translate(-5px, 0px) ;
+  transform: translate(-5px, 0);
   box-shadow: 10px 5px 10px rgb(196, 196, 196), -10px 5px 10px rgb(196, 196, 196);
   width: calc(100% + 10px);
 }
@@ -300,8 +300,9 @@ img.little-img,
 }
 
 .border-glow:hover {
-  transform: translate(0px, -5px);
-  box-shadow: 5px 5px 10px #ffe6003b,
+  transform: translate(0, -5px);
+  box-shadow:
+    5px 5px 10px #ffe6003b,
     -5px -5px 10px #ffe6003b,
     5px -5px 10px #ffe6003b,
     -5px 5px 10px #ffe6003b;

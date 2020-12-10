@@ -37,29 +37,30 @@ article {
   width: 258px;
 }
 
-footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: #666;
+h3.article-title {
+  margin-top: 1rem;
+  line-height: 24px;
 }
 
-footer ul li {
-  padding: 0 15px 0 0;
-  list-style-type: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: grey;
-}
-
-footer ul li a {
-  font-size: 14px;
-  text-decoration: none;
-  color: grey;
-}
-
-footer ul li a:hover {
-  text-decoration: none;
+h3.article-title a {
   color: black;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+h3.article-title a:hover {
+  -webkit-text-decoration: underline #f72210;
+          text-decoration: underline #f72210;
+}
+
+h3.article-title + p {
+  color: #333;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 div.article-footer {
@@ -90,30 +91,29 @@ div.article-footer h4 a:hover {
   color: #f72210;
 }
 
-h3.article-title, h3.sml-article-title {
-  margin-top: 1rem;
-  line-height: 24px;
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
 }
 
-h3.article-title a, h3.sml-article-title a {
-  color: black;
-  font-weight: 700;
-  font-size: 22px;
+footer ul li {
+  padding: 0 15px 0 0;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+footer ul li a {
+  font-size: 14px;
   text-decoration: none;
+  color: grey;
 }
 
-h3.article-title a:hover, h3.sml-article-title a:hover {
-  -webkit-text-decoration: underline #f72210;
-          text-decoration: underline #f72210;
-}
-
-h3.article-title + p, h3.sml-article-title + p {
-  color: #333;
-  font-family: arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  margin-bottom: 0;
+footer ul li a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 div.vs-div {
@@ -157,29 +157,6 @@ div.vs-div span::after {
   right: 0;
   z-index: -1;
   top: 50%;
-}
-
-h3.sml-article-title + p {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-h3.sml-article-title + p a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #555;
-}
-
-h3.sml-article-title + p a:hover {
-  -webkit-text-decoration: underline #f72210;
-          text-decoration: underline #f72210;
-  color: black;
-}
-
-h3.sml-article-title + p span {
-  font-weight: 700;
-  color: #555;
 }
 
 div.login-and-sub a {

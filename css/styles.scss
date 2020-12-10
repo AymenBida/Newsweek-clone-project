@@ -60,32 +60,28 @@ article {
   width: 258px;
 }
 
-footer {
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 12px;
-    color: #666;
+h3.article-title {
+  margin-top: 1rem;
+  line-height: 24px;
+
+  a {
+    color: $black;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
   }
 
-  ul {
-    li {
-      padding: 0 15px 0 0;
-      list-style-type: none;
-      font-family: Arial, Helvetica, sans-serif;
-      color: grey;
+  a:hover {
+    text-decoration: underline $red;
+  }
 
-      a {
-        font-size: 14px;
-        text-decoration: none;
-        color: grey;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: $black;
-      }
-    }
+  + p {
+    color: $blackish;
+    font-family: $arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
   }
 }
 
@@ -117,28 +113,32 @@ div.article-footer {
   }
 }
 
-h3.article-title {
-  margin-top: 1rem;
-  line-height: 24px;
-
-  a {
-    color: $black;
-    font-weight: 700;
-    font-size: 22px;
-    text-decoration: none;
+footer {
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
   }
 
-  a:hover {
-    text-decoration: underline $red;
-  }
+  ul {
+    li {
+      padding: 0 15px 0 0;
+      list-style-type: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: grey;
 
-  + p {
-    color: $blackish;
-    font-family: $arial;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    margin-bottom: 0;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: grey;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $black;
+      }
+    }
   }
 }
 
@@ -172,38 +172,14 @@ div.vs-div {
 
   span::before {
     @include deco();
+
     top: calc(50% - 2px);
   }
 
   span::after {
     @include deco();
+
     top: 50%;
-  }
-}
-
-h3.sml-article-title {
-  @extend h3.article-title;
-
-  + p {
-    font-family: $roboto;
-    font-size: 14px;
-    line-height: 21px;
-
-    a {
-      font-weight: 700;
-      text-decoration: none;
-      color: $grayish;
-    }
-
-    a:hover {
-      text-decoration: underline $red;
-      color: $black;
-    }
-
-    span {
-      font-weight: 700;
-      color: $grayish;
-    }
   }
 }
 

@@ -506,3 +506,19 @@ section#news-letter div#btn-group button.btn {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* navbar animation */
+
+ .animation{
+  /* background-color: blue;  */
+  width: 100px;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+
+
+.animation:hover{
+width: 100px;
+transform: translate(-30px);
+background-color: blue;
+}

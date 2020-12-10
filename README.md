@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 #  We have created the clone of the Newsweek-clone-project magazine.
-#   This project has been created as a part of Microverse Collaborative Project.
+#  This project has been created as a part of Microverse Collaborative Project.
 
 ![screenshot](./images/screenshot.jpg)
 
@@ -23,15 +23,22 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Must have a text editor installed on your machine.
+You must have a text editor installed on your machine.
 You can use any default text editor that comes with the system like Notepad but advanced text editors
 like Visual Studio Code, Atom or Sublime is recommended.
 A machine with a working and up to date web browser.
 
 ### Setup
 
-* Clone the repository to your folder of choice using Git (or just download all the files)
-* Open the index.html file (in the root folder) and the website should show up.
+* Clone the repository to your folder of choice using Git :
+
+* git clone git@github.com:AymenBida/Newsweek-clone-project.git
+
+* then go to that folder :
+
+* cd "your-folder-path"
+
+* Open the index.html file (in the folder) and the website should show up.
 
 ## Authors
 

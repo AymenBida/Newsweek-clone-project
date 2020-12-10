@@ -7,9 +7,9 @@
    variables
    ############## */
 
-   /* Here we declare variables in the scss files */
+/* Here we declare variables in the scss files */
 
-   /* ##############
+/* ##############
    Initialising
    ############## */
 body {
@@ -66,14 +66,25 @@ div.article-footer h4 {
   line-height: 20px;
 }
 
-footer ul li a:hover {
-  text-decoration: none;
-  color: black;
-}
-
 div.login-and-sub a {
   font-size: 18px;
   text-decoration: none;
+}
+
+div.article-footer h3 a {
+  font-size: 17px;
+}
+
+div.article-footer h4 a {
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 div.header-2 ul li a {
@@ -117,17 +128,6 @@ div.article-footer {
   min-height: 65px;
 }
 
-div.article-footer h3 a {
-  font-size: 17px;
-}
-
-div.article-footer h4 a {
-  color: black;
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 div.login-and-sub a:hover {
   text-decoration: none;
 }
@@ -136,6 +136,18 @@ div.login-and-sub > a:last-of-type {
   color: black;
   background-color: #ffe400;
   border-radius: 20px;
+}
+
+div.vs-div span {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: table;
+  margin: auto;
 }
 
 .image + div.notice a,
@@ -169,18 +181,6 @@ footer ul li {
 div.vs-div {
   margin: auto;
   position: relative;
-}
-
-div.vs-div span {
-  color: #bdbdbd;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 700;
-  padding: 10px;
-  background-color: black;
-  border-radius: 50%;
-  display: table;
-  margin: auto;
 }
 
 div.vs-div span::before {
@@ -257,7 +257,8 @@ div.header-3 ul li input {
   padding-bottom: 24px;
 }
 
-img.little-img, .smaller-img {
+img.little-img,
+.smaller-img {
   height: 95px;
   width: 95px;
   float: left;

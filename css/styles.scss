@@ -14,16 +14,16 @@ $red: #f72210;
 $yellow: #ffe400;
 $lightgray: #f4f5f6;
 $gray: rgba(3, 3, 3, 0.4);
-$blackish: #333333;
-$grayish: #555555;
+$blackish: #333;
+$grayish: #555;
 $black: black;
 $white: white;
 
 $roboto: "Roboto Condensed",
-sans-serif;
-$arial: Arial,
-Helvetica,
-sans-serif;
+  sans-serif;
+$arial: arial,
+  helvetica,
+  sans-serif;
 
 $border-gray: solid 0.5px rgb(209, 209, 209);
 
@@ -60,72 +60,167 @@ article {
   width: 258px;
 }
 
-.image+div.notice {
-  position: relative;
+footer {
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+  }
 
-  a,
-  span {
-    position: absolute;
-    top: -28px;
-    padding: 6px 16px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: $red;
-    font-size: 17px;
-    line-height: 16px;
+  ul {
+    li {
+      padding: 0 15px 0 0;
+      list-style-type: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: grey;
+
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: grey;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+}
+
+div.article-footer {
+  margin: 15px 0;
+  min-height: 65px;
+
+  h3 {
+    line-height: 20px;
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  h4 {
+    line-height: 20px;
+
+    a {
+      color: $black;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $red;
+    }
+  }
+}
+
+h3.article-title {
+  margin-top: 1rem;
+  line-height: 24px;
+
+  a {
+    color: $black;
     font-weight: 700;
+    font-size: 22px;
     text-decoration: none;
   }
-}
 
-.image+div.notice.sml-notice {
-  span {
-    background-color: #c2d4d7;
-    color: $black;
-    top: -19px;
-    padding: 4px 8px;
-    font-size: 14px;
-    line-height: 16px;
+  a:hover {
+    text-decoration: underline $red;
+  }
+
+  + p {
+    color: $blackish;
+    font-family: $arial;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
   }
 }
 
-.border-bottom {
-  border-bottom: $border-gray;
+@mixin deco {
+  content: "";
+  display: block;
+  height: 0.5px;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(219, 219, 219);
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
-.padding-and-border {
-  border-bottom: solid 1px rgb(209, 209, 209);
-  padding-bottom: 24px;
+div.vs-div {
+  margin: auto;
+  position: relative;
+
+  span {
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: $black;
+    border-radius: 50%;
+    display: table;
+    margin: auto;
+  }
+
+  span::before {
+    @include deco();
+    top: calc(50% - 2px);
+  }
+
+  span::after {
+    @include deco();
+    top: 50%;
+  }
 }
 
-img.little-img {
-  height: 95px;
-  width: 95px;
-  float: left;
-  clear: left;
-  margin: 0 15px 10px 0;
-  cursor: pointer;
+h3.sml-article-title {
+  @extend h3.article-title;
+
+  + p {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 21px;
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: $grayish;
+    }
+
+    a:hover {
+      text-decoration: underline $red;
+      color: $black;
+    }
+
+    span {
+      font-weight: 700;
+      color: $grayish;
+    }
+  }
 }
 
-.smaller-img {
-  @extend img.little-img;
-  height: 65px;
-  width: 65px;
-}
+div.login-and-sub {
+  a {
+    font-size: 18px;
+    text-decoration: none;
+  }
 
-/* ##############
-   Styling text
-   ############## */
+  a:hover {
+    text-decoration: none;
+  }
 
-.test {
-  position: sticky;
-  top: 0;
-}
-
-div.header-1 {
-  background-color: $red;
-
-  div.size-210 {
-    width: 210px;
+  > a:last-of-type {
+    color: $black;
+    background-color: $yellow;
+    border-radius: 20px;
   }
 }
 
@@ -178,20 +273,73 @@ div.header-3 {
   }
 }
 
-div.login-and-sub {
-  a {
-    font-size: 18px;
+.image + div.notice {
+  position: relative;
+
+  a,
+  span {
+    position: absolute;
+    top: -28px;
+    padding: 6px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $red;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
     text-decoration: none;
   }
+}
 
-  a:hover {
-    text-decoration: none;
-  }
-
-  >a:last-of-type {
+.image + div.notice.sml-notice {
+  span {
+    background-color: #c2d4d7;
     color: $black;
-    background-color: $yellow;
-    border-radius: 20px;
+    top: -19px;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.border-bottom {
+  border-bottom: $border-gray;
+}
+
+.padding-and-border {
+  border-bottom: solid 1px rgb(209, 209, 209);
+  padding-bottom: 24px;
+}
+
+img.little-img {
+  height: 95px;
+  width: 95px;
+  float: left;
+  clear: left;
+  margin: 0 15px 10px 0;
+  cursor: pointer;
+}
+
+.smaller-img {
+  @extend img.little-img;
+
+  height: 65px;
+  width: 65px;
+}
+
+/* ##############
+   Styling text
+   ############## */
+
+.test {
+  position: sticky;
+  top: 0;
+}
+
+div.header-1 {
+  background-color: $red;
+
+  div.size-210 {
+    width: 210px;
   }
 }
 
@@ -200,57 +348,6 @@ div.login-and-sub {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-}
-
-h3.article-title {
-  margin-top: 1rem;
-  line-height: 24px;
-
-  a {
-    color: $black;
-    font-weight: 700;
-    font-size: 22px;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline $red;
-  }
-
-  +p {
-    color: $blackish;
-    font-family: $arial;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-}
-
-h3.sml-article-title {
-  @extend h3.article-title;
-
-  +p {
-    font-family: $roboto;
-    font-size: 14px;
-    line-height: 21px;
-
-    a {
-      font-weight: 700;
-      text-decoration: none;
-      color: $grayish;
-    }
-
-    a:hover {
-      text-decoration: underline $red;
-      color: $black;
-    }
-
-    span {
-      font-weight: 700;
-      color: $grayish;
-    }
-  }
 }
 
 #newsweek-logo {
@@ -264,7 +361,7 @@ h3.sml-article-title.f-size-17-20 {
     font-size: 17px;
   }
 
-  +p {
+  + p {
     color: $blackish;
     font-family: $arial;
     font-size: 13px;
@@ -274,81 +371,14 @@ h3.sml-article-title.f-size-17-20 {
   }
 }
 
-div.article-footer {
-  margin: 15px 0;
-  min-height: 65px;
-
-  h3 {
-    line-height: 20px;
-
-    a {
-      font-size: 17px;
-    }
-  }
-
-  h4 {
-    line-height: 20px;
-
-    a {
-      color: $black;
-      font-size: 17px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: $red;
-    }
-  }
-}
-
-@mixin deco {
-  content: "";
-  display: block;
-  height: 0.5px;
-  position: absolute;
-  width: 100%;
-  background-color: rgb(219, 219, 219);
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
-div.vs-div {
-  margin: auto;
-  position: relative;
-
-  span {
-    color: rgb(189, 189, 189);
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 700;
-    padding: 10px;
-    background-color: $black;
-    border-radius: 50%;
-    display: table;
-    margin: auto;
-  }
-
-  span::before {
-    @include deco();
-    top: calc(50% - 2px);
-  }
-
-  span::after {
-    @include deco();
-    top: 50%;
-  }
-}
-
 section#debate-section {
-  >div:first-of-type {
+  > div:first-of-type {
     margin: 15px 0 10px 0;
     border-top: solid 4px rgb(209, 209, 209);
     padding-top: 10px;
   }
 
-  >div:last-of-type {
+  > div:last-of-type {
     margin: 10px 0 15px 0;
     border-bottom: solid 4px rgb(209, 209, 209);
     padding-bottom: 28px;
@@ -372,6 +402,18 @@ div#subscribe {
   a {
     font-size: 19px;
     background-color: $red;
+  }
+}
+
+section#big-section {
+  h2 {
+    line-height: 22px;
+
+    > a {
+      font-size: 22px;
+      text-decoration: none;
+      color: $red;
+    }
   }
 }
 
@@ -411,18 +453,6 @@ section#in-the-magazine {
   }
 }
 
-section#big-section {
-  h2 {
-    line-height: 22px;
-
-    >a {
-      font-size: 22px;
-      text-decoration: none;
-      color: $red;
-    }
-  }
-}
-
 section#editors-pick {
   h2 {
     font-size: 19px;
@@ -445,16 +475,16 @@ section#news-letter {
       height: 240px;
       position: relative;
 
-      >img {
+      > img {
         position: absolute;
       }
 
-      >img:first-of-type {
+      > img:first-of-type {
         top: 0;
         left: 0;
       }
 
-      >img:last-of-type {
+      > img:last-of-type {
         bottom: 0;
         right: 0;
       }
@@ -494,35 +524,6 @@ section#news-letter {
   background-position-x: 50%;
   background-size: cover;
   background-position-y: 50%;
-}
-
-footer {
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 12px;
-    color: #666666;
-  }
-
-  ul {
-    li {
-      padding: 0 15px 0 0;
-      list-style-type: none;
-      font-family: Arial, Helvetica, sans-serif;
-      color: grey;
-
-      a {
-        font-size: 14px;
-        text-decoration: none;
-        color: grey;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: $black;
-      }
-    }
-  }
 }
 
 #social {
